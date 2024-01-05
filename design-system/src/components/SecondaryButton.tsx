@@ -7,8 +7,8 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export const SecondaryButton = ({text,icon, ...props}: Props) => {
     return (
-        <button className='px-4 py-3 bg-yellow_500 rounded-r-full text-black' {...props}>
-            {icon && <span className="mr-2">{icon}</span>}
+        <button className='bg-grey_500 text-black w-12 h-12 flex items-center justify-center inline-flex rounded-full' {...props}>
+            {icon && <span className="mr-2 contents text-2xl">{icon}</span>}
             {text}
         </button>
     )
