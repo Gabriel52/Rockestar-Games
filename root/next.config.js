@@ -12,6 +12,7 @@ module.exports = {
           name: "root",
           remotes: {
             home: `home@http://localhost:3000/_next/static/chunks/remoteEntry.js`,
+            design: `design@http://localhost:3002/_next/static/chunks/remoteEntry.js`,
           },
           filename: "static/chunks/remoteEntry.js",
 

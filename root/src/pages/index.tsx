@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 const Header = dynamic(
-  () => import("home/modules/Home").then((m) => m.Header),
+  () => import("design/component/Header").then((m) => m.Header),
   {
     ssr: false,
   }
@@ -10,9 +10,8 @@ const Header = dynamic(
 export default function Home() {
   return (
     <>
-      <h1>Micro-frontends Next JS </h1>
-
       <Header />
+      <h1 className="text-red-700">Micro-frontends Next JS </h1>
     </>
   );
 }

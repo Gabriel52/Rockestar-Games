@@ -1,11 +1,11 @@
 {
     "scripts": {
-        "install": "cd ./home && npm i --force  && cd ../root && npm i --force",
-        "dev": "concurrently \"cd home; npm run dev\" \"cd root; npm run dev\"",
+        "install": "cd ./home && npm i --force  && cd ../root && cd ../design-system npm i --force && npm i --",
+        "dev": "concurrently \"cd home; npm run dev\" \"cd root; npm run dev\" \"cd design-system; npm run dev\"",
         "start": "concurrently \"cd home; npm run start\" \"cd root; npm run start\" ",
-        "build": "cd ./home && npm run build && cd ../root && npm run build"
-      },
-      "dependencies": {
+        "build": "cd ./home && npm run build && cd ../root && npm run build && cd ../design-system && npm run build"
+    },
+    "dependencies": {
         "concurrently": "^7.6.0"
-      }
+    }
 }
