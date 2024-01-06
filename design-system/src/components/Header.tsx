@@ -8,17 +8,17 @@ import { SecondaryButton } from './SecondaryButton';
 
 export function Header() {
     return (
-      <header className="h-28 bg-black_700 flex items-center justify-around">
+      <header className="h-28 bg-black_700 flex items-center justify-between px-32">
         <div className='flex items-center'>
           <Image src="./assets/Logo.svg" alt='Logo' width={53} height={53}/>
           <ul className='flex gap-x-6 ml-10'>
-            <li>
+            <li className="hover:cursor-pointer hover:text-yellow_500 ease-in duration-200">
               Jogos
             </li>
-            <li>
+            <li className="hover:cursor-pointer hover:text-yellow_500 ease-in duration-200">
               Loja
             </li>
-            <li>
+            <li className="hover:cursor-pointer hover:text-yellow_500 ease-in duration-200">
               Ajuda
             </li>
           </ul>
