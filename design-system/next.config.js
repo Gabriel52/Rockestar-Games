@@ -13,7 +13,6 @@ module.exports = {
           filename: "static/chunks/remoteEntry.js",
           exposes: {
             "./component/Header": "./src/components/Header.tsx",
-            "./colors": "./src/colors/colors.ts",
           },
           shared: {},
         })

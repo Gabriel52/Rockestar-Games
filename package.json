@@ -1,11 +1,17 @@
 {
     "scripts": {
-        "install": "cd ./home && npm i --force  && cd ../root && cd ../design-system npm i --force && npm i --",
+        "install": "cd ./home && npm i --force  && cd ../root && npm i --force && cd ../design-system npm i --force",
+        "remove-package": "cd ./home &&  rm -r node_modules  && cd ../root &&  rm -r node_modules && cd ../design-system  rm -r node_modules",
         "dev": "concurrently \"cd home; npm run dev\" \"cd root; npm run dev\" \"cd design-system; npm run dev\"",
         "start": "concurrently \"cd home; npm run start\" \"cd root; npm run start\" ",
         "build": "cd ./home && npm run build && cd ../root && npm run build && cd ../design-system && npm run build"
     },
     "dependencies": {
         "concurrently": "^7.6.0"
+    },
+    "engine": {
+        "npm": "10.2.4",
+        "node": "21.4.0"
+
     }
 }
