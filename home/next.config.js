@@ -9,10 +9,11 @@ module.exports = {
       config.plugins.push(
         new NextFederationPlugin({
           name: "home",
-
+          remotes: {
+            design: `design@http://localhost:3002/_next/static/chunks/remoteEntry.js`,
+          },
           filename: "static/chunks/remoteEntry.js",
           exposes: {
-            "./component/Header": "./src/components/Header.tsx",
             './modules/Home': './src/modules/HomeScreen.tsx'
           },
           shared: {},

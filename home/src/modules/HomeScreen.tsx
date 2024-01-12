@@ -1,7 +1,13 @@
+import { FeaturedGames } from "@src/components/FeaturedGames";
+import { Slider } from "@src/components/Sliders";
+
 export function HomeScreen() {
     return (
       <>
-        <h2>This page is the homesss</h2>
+        <Slider />
+        <div className="px-36">
+          <FeaturedGames />
+        </div>
       </>
     );
 }

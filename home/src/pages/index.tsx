@@ -1,12 +1,18 @@
-import { Inter } from '@next/font/google'
-import { HomeScreen } from '@src/modules/HomeScreen'
+import { HomeScreen } from "@src/modules/HomeScreen";
+import dynamic from "next/dynamic";
 
-const inter = Inter({ subsets: ['latin'] })
+const Header = dynamic(
+  () => import("design/component/Header").then((m) => m.Header),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   return (
     <>
-      <HomeScreen/>
+      <Header />
+      <HomeScreen />
     </>
-  )
+  );
 }
