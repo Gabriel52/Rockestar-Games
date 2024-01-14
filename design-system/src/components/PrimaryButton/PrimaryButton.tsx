@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react'
+import { PrimaryButtonStyled } from './styled'
 
 type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     text?: string
@@ -7,9 +8,9 @@ type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export const PrimaryButton = ({text,icon, ...props}: Props) => {
     return (
-        <button className='px-4 py-3 bg-yellow_500 rounded-lg text-black hover:brightness-50 ease-in duration-200' {...props}>
+        <PrimaryButtonStyled>
             {icon && <span className="mr-2">{icon}</span>}
             {text}
-        </button>
+        </PrimaryButtonStyled>
     )
 }

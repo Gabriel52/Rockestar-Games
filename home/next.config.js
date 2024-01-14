@@ -14,7 +14,7 @@ module.exports = {
           },
           filename: "static/chunks/remoteEntry.js",
           exposes: {
-            './modules/Home': './src/modules/HomeScreen.tsx'
+            './modules/Home': './src/modules/HomeScreen.tsx',
           },
           shared: {},
         })

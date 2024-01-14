@@ -1,16 +1,24 @@
-
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 type Props = {
     animationType?: string
 }
 
-export const Slider = ({animationType='cubeAnimation'}: Props):JSX.Element => {
+export const Slider = ():JSX.Element => {
     return (
         <section >
-            {/* <AwesomeSlider animation={animationType}>
-                <div data-src="./assets/gta-6.jpeg" />
-                <div data-src="./assets/gta-5.jpg" />
-            </AwesomeSlider> */}
+            <Swiper
+                spaceBetween={50}
+                slidesPerView={3}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+                >
+                <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+            </Swiper>
+
         </section>
     )
 }

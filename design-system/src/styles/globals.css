@@ -92,7 +92,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: white
+  background: '#020202'
 }
 
 a {

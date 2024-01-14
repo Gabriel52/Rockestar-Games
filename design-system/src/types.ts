@@ -9,4 +9,6 @@ export type ColorsType = {
 
     grey_500: string;
     grey_400: string;
+    
+    white: string;
 }

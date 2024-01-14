@@ -11,7 +11,9 @@ const COLORS: ColorsType = {
     black_100: '#101010',
 
     grey_500: '#5A5A5A',
-    grey_400: '#606060'
+    grey_400: '#606060',
+
+    white: '#FFFFFF'
 }
 
 export default COLORS
