@@ -24,8 +24,9 @@ export const ListStyled = styled.ul`
 `
 
 export const ItemStyled = styled.li`
-    transition: all 200ms outside;
+    transition: all 0.5s ease-out allow-discrete;
     cursor: pointer;
+    list-style: none;
     &:hover{
         color: ${COLORS.yellow_500};
     }

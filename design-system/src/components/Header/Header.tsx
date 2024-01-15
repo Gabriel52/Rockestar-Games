@@ -29,7 +29,7 @@ export function Header() {
           <div>
             <PrimaryButton text='Baixar o Launcher' type="button"/>
           </div>
-          <div className='flex items-center gap-x-6'> 
+          <div style={{display: 'flex', gridGap: '16px'}}> 
             <SecondaryButton icon={<IoSearchSharp color='#FFF'/>} /> 
             <SecondaryButton icon={<FaRegUser color='#FFF'/>} /> 
           </div>

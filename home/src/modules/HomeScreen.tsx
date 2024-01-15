@@ -1,13 +1,23 @@
 import { FeaturedGames } from "@src/components/FeaturedGames";
-import { Slider } from "@src/components/Sliders";
+import Image from "next/image";
+import { ContainerStyled } from "./styled";
+import { LastNews } from "@src/components/LastNews";
 
 export function HomeScreen() {
     return (
       <>
-        <Slider />
-        <div className="px-36">
+        <Image
+          src="/assets/gta-5.jpg"
+          alt="banner"
+          width={0}
+          height={0}
+          sizes="80vw"
+          style={{ width: '100%', height: '80vh' }} // optional
+        />
+        <ContainerStyled>
           <FeaturedGames />
-        </div>
+          <LastNews />
+        </ContainerStyled>
       </>
     );
 }
